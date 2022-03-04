@@ -1,0 +1,23 @@
+.product_list {
+  display: grid;
+  grid-template-columns: 3fr 12fr;
+}
+.rows {
+  padding: 20px;
+  margin-top: 30px;
+}
+.product_list .sidebar_div a:first-child
+{
+    color: tomato !important;
+}
+@media screen and (max-width: 700px) {
+  .product_list {
+    display: block;
+  }
+  .sidebar_div a {
+    font-size: 2rem;
+  }
+  .all_feature {
+    padding: 2vmax;
+  }
+}

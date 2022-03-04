@@ -1,0 +1,91 @@
+.dashBord {
+  width: 100%;
+  height: unset;
+  display: grid;
+  grid-template-columns: 3fr 15fr;
+}
+.sidebar_div {
+  padding: 2vmax;
+  height: 85vh;
+  /* background-color: red; */
+}
+.sidebar_div a {
+  font-size: 2.5rem;
+  color: tomato;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Courier New", Courier, monospace;
+}
+.all_feature {
+  padding-left: 5vmax;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.all_feature a {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.3rem;
+  margin-top: 15px;
+  color: rgb(29, 29, 29);
+  transition: 0.3s;
+}
+.all_feature a:hover {
+  margin-left: 10px;
+  color: tomato;
+}
+.dashBordMinContainer {
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  min-height: 80vh;
+  /* background-color: blue; */
+}
+.style_container {
+  width: 100%;
+  height: 10vh;
+  background-color: rgb(0, 110, 255);
+  color: #fff;
+}
+.circle_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.circle_container .circle {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: tomato;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #fff;
+}
+.circle_container .circle h4 {
+  font-weight: 400;
+}
+.circle_container .circle:nth-child(2) {
+  background-color: rgb(255, 209, 110);
+  color: #000000;
+}
+.circle_container .circle:last-child {
+  background-color: rgb(88, 88, 88);
+  color: #ffffff;
+}
+.LineChart {
+  width: 100%;
+}
+@media screen and (max-width: 800px) {
+  .dashBord {
+    display: block !important;
+  }
+  .sidebar_div {
+    height: unset;
+  }
+  .circle_container .circle {
+    width: 150px;
+    height: 150px;
+  }
+}
